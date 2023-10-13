@@ -137,6 +137,7 @@ body{
   display: flex;
   justify-content:space-between;
   text-align: center;
+  padding: 0 15px;
 }
 
 .color-item img{
@@ -161,7 +162,12 @@ body{
 
 .contacts-form{
   width: 100%;
-  padding: 137px 93px;
+  max-width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 50px;
 }
 
 .contacts-title{
@@ -252,19 +258,26 @@ body{
 
   .contacts-title{
     text-align: center;
+    padding-top: 20px;
   }
 
   .contscts-form-button{
     margin: 0;
   }
-  .contacts-form{
-    padding: 50px 0;
+
+  .new-text{
+    padding: 0 15px;
   }
+
 }
 
 @media (max-width:1100px){
   .new-img{
     display: none;
+  }
+
+  .color-item{
+    margin-right: 15px;
   }
 }
 
@@ -279,13 +292,11 @@ body{
     border: none;
     cursor: pointer;
     position: relative;
-    z-index: 50;
   }
 
   .logo-img,
   .phone{
     position: relative;
-    z-index: 50;
   }
 
   .btn-line{
@@ -329,7 +340,7 @@ body{
   .menu{
     position: absolute;
     left: 0;
-    top: 0;
+    top: -118px;
     bottom: 0;
     right: 0;
     background-color: #0a0a0a;
@@ -342,7 +353,9 @@ body{
   }
   
   .menu-open .menu{
-    transform: translateY(0);
+    transform: translateY(-236px);
+    height: calc(100vh-118px);
+    width: 100%;
   }
 
   .menu-item{
@@ -357,6 +370,7 @@ body{
 
   .color-list{
     flex-wrap: wrap;
+    justify-content: space-evenly;
   }
 
   .new-text p{
@@ -380,6 +394,8 @@ body{
     padding-bottom: 50px;
   }
 }
+
+
 @media(max-width:640px){
   .footer-inner{
     padding: 20px 0;
