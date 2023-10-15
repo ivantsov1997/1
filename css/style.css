@@ -44,12 +44,9 @@ body{
   display:flex;
   flex-grow: 1;
   flex-basis: 0;
-
+  gap: 30px;
 }
 
-.menu-item:not(:last-child){
-  padding-right:  30px;
-}
 
 .phone{
   flex-grow: 1;
@@ -281,7 +278,7 @@ body{
   }
 }
 
-@media(max-width:940px){
+@media(max-width:946px){
 
   .menu-btn{
     display: inline-block;
