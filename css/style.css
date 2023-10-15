@@ -433,16 +433,24 @@ body{
 }
 
 @media(max-width:420px){
-  .nav{
-    flex-wrap: wrap;
-  }
+ .menu-btn{
+  order: 3;
+ }
+ .logo{
+  order: 1;
+ }
   .menu-item{
+    padding: 0;
     font-size: 32px;
   }
   .phone{
     flex-basis: auto;
-    margin-top:50px ;
-    order: 3;
+    order: 2;
+    width: 100%;
+  }
+  .menu-open .menu{
+    transform: translateY(0);
+    height: calc(100vh-118px);
     width: 100%;
   }
 }
